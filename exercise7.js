@@ -16,5 +16,10 @@ function getOldBooks() {
     return oldBooks;
 }
 
+function addGenre() {
+    return books.map(book => ({...book, genre: 'classic'}));
+}
+
 console.log(getBookTitle(3));
 console.log(getOldBooks());
+console.log(addGenre());
