@@ -14,6 +14,12 @@ function printPhoneBook(contacts) {
     contacts.forEach((phNum, person) => {
         console.log(`${person}: ${phNum}`);
     })
+    console.log('\n');
 }
 
 printPhoneBook(phoneBookABC);
+printPhoneBook(phoneBookDEF)
+
+const phoneBook = new Map([...phoneBookABC, ...phoneBookDEF]);
+
+printPhoneBook(phoneBook);
