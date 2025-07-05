@@ -11,5 +11,9 @@ phoneBookDEF.set('Fred', '043210987')
 phoneBookABC.set('Caroline', '0355221182')
 
 function printPhoneBook(contacts) {
-    contacts.forEach
+    contacts.forEach((phNum, person) => {
+        console.log(`${person}: ${phNum}`);
+    })
 }
+
+printPhoneBook(phoneBookABC);
